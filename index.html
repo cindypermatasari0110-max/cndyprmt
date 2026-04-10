@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CNbeuty — Klinik Kecantikan</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="logo">
+        <span class="logo-mark">✦</span>
+        <span class="logo-text">CN<em>beauty</em></span>
+      </div>
+      <nav class="main-nav" id="main-nav">
+        <ul>
+          <li><a href="#beranda" class="nav-link active">Beranda</a></li>
+          <li><a href="#Treatment" class="nav-link">Treatment</a></li>
+          <li><a href="#beli" class="nav-link">Pembelian</a></li>
+          <li><a href="#katalog" class="nav-link">Katalog</a></li>
+        </ul>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <section id="beranda" class="hero-section">
+      <div class="hero-content">
+        <p class="hero-eyebrow">Treatment Terbaru 2026</p>
+        <h1 class="hero-title">Tampil<br /><em>Glowing,</em><br />Tampil Percaya Diri</h1>
+        <p class="hero-desc">Nikmati berbagai treatment kecantikan terbaik untuk kulit sehat, glowing, dan lebih percaya diri setiap hari.</p>
+        <div class="hero-cta">
+          <a href="#produk" class="btn btn-primary">Lihat Treatment</a>
+          <a href="#beli" class="btn btn-ghost">Booking Sekarang</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-badge">Glow</div>
+        <div class="hero-img-wrap">
+          <div class="hero-shape"></div>
+          <div class="hero-img-placeholder">
+            <img src="image/IMG_22.PNG" alt="Deskripsi gambar">
+          </div>
+        </div>
+        <div class="hero-stat"><strong>600+</strong><span>Treatment</span></div>
+      </div>
+    </section>
+
+    <section id="produk" class="products-section">
+      <div class="section-header">
+        <p class="section-eyebrow">Unggulan</p>
+        <h2 class="section-title">Treatment Pilihan</h2>
+      </div>
+      <div class="products-grid" id="static-products">
+        <article class="product-card">
+          <div class="card-badge">Best Seller</div>
+          <div class="card-img">
+            <img src="image/IMG_9275.JPG.jpeg" alt="Deskripsi gambar">
+          </div>
+          <div class="card-body">
+            <p class="card-category">Facial · Brightening</p>
+            <h3 class="card-name">Brightening Facial Glow</h3>
+            <p class="card-desc">Perawatan wajah untuk mencerahkan kulit kusam dan membuat wajah glowing.</p>
+            <div class="card-footer">
+              <span class="card-price">Rp 150.000</span>
+              <button class="btn-add-cart">+ Booking</button>
+            </div>
+          </div>
+        </article>
+        <article class="product-card featured">
+          <div class="card-badge new">New</div>
+          <div class="card-img">
+            <img src="image/IMG_9279.PNG" alt="Deskripsi gambar">
+          </div>
+          <div class="card-body">
+            <p class="card-category">Laser · Rejuvenation</p>
+            <h3 class="card-name">Skin Rejuvenation Laser</h3>
+            <p class="card-desc">Treatment laser untuk meremajakan kulit dan mengurangi noda hitam.</p>
+            <div class="card-footer">
+              <span class="card-price">Rp 350.000</span>
+              <button class="btn-add-cart">+ Booking</button>
+            </div>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="card-badge sale">Sale 20%</div>
+          <div class="card-img">
+            <img src="image/IMG_9280.JPG.jpeg" alt="Deskripsi gambar">
+          </div>
+          <div class="card-body">
+            <p class="card-category">Spa · Relaxation</p>
+            <h3 class="card-name">Premium Facial & Spa</h3>
+            <p class="card-desc">Perawatan wajah lengkap dengan relaksasi untuk kulit segar dan sehat.</p>
+            <div class="card-footer">
+              <span class="card-price">Rp 250.000</span>
+              <button class="btn-add-cart">+ Booking</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="beli" class="form-section">
+      <div class="section-header">
+        <p class="section-eyebrow">Pembelian</p>
+        <h2 class="section-title">Form Booking Treatment</h2>
+      </div>
+      <div class="form-wrapper">
+        <form id="purchase-form" novalidate>
+
+          <div class="form-row">
+            <!-- text input -->
+            <div class="form-group">
+              <label for="nama">Nama Lengkap <span class="req">*</span></label>
+              <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap" required minlength="3" autocomplete="name" />
+              <span class="error-msg" id="error-nama"></span>
+            </div>
+            <div class="form-group">
+              <label for="email">Alamat Email <span class="req">*</span></label>
+              <input type="email" id="email" name="email" placeholder="contoh@email.com" required autocomplete="email" />
+              <span class="error-msg" id="error-email"></span>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="telepon">Nomor Telepon <span class="req">*</span></label>
+              <input type="number" id="telepon" name="telepon" placeholder="08xxxxxxxxxx" required min="1000000000" />
+              <span class="error-msg" id="error-telepon"></span>
+            </div>
+            <div class="form-group">
+              <label for="password">Buat Password Akun <span class="req">*</span></label>
+              <div class="input-wrap">
+                <input type="password" id="password" name="password" placeholder="Min. 8 karakter" required minlength="8" />
+                <button type="button" class="toggle-pw" id="toggle-pw" aria-label="Tampilkan password">👁</button>
+              </div>
+              <span class="error-msg" id="error-password"></span>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="produk-pilihan">Pilih Treatment <span class="req">*</span></label>
+              <select id="produk-pilihan" name="produk-pilihan" required>
+                <option value="">-- Pilih Treatment --</option>
+                <option value="facial">Brightening Facial Glow — Rp 150.000</option>
+                <option value="laser">Skin Rejuvenation — Rp 350.000</option>
+                <option value="spa">Premium Facial & Spa — Rp 250.000</option>
+                <option value="acne">Acne Treatment — Rp 200.000</option>
+              </select>
+              <span class="error-msg" id="error-produk-pilihan"></span>
+            </div>
+            <div class="form-group">
+              <label for="jumlah">Jumlah Pesanan <span class="req">*</span></label>
+              <input type="number" id="jumlah" name="jumlah" placeholder="Min. 1" required min="1" max="99" value="1" />
+              <span class="error-msg" id="error-jumlah"></span>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="label-block">Metode Pembayaran <span class="req">*</span></label>
+            <div class="radio-group">
+              <label class="radio-label">
+                <input type="radio" name="pembayaran" value="transfer" required />
+                <span class="radio-custom"></span>
+                Transfer Bank
+              </label>
+              <label class="radio-label">
+                <input type="radio" name="pembayaran" value="cod" />
+                <span class="radio-custom"></span>
+                COD (Cash on Delivery)
+              </label>
+              <label class="radio-label">
+                <input type="radio" name="pembayaran" value="ewallet" />
+                <span class="radio-custom"></span>
+                E-Wallet
+              </label>
+            </div>
+            <span class="error-msg" id="error-pembayaran"></span>
+          </div>
+
+          <div class="form-group">
+            <label class="checkbox-label">
+              <input type="checkbox" id="setuju" name="setuju" required />
+              <span class="checkbox-custom"></span>
+              Saya menyetujui <a href="#" class="link">syarat dan ketentuan</a> yang berlaku <span class="req">*</span>
+            </label>
+            <span class="error-msg" id="error-setuju"></span>
+          </div>
+
+          <div class="form-actions">
+            <button type="reset" class="btn btn-ghost">Reset Form</button>
+            <button type="submit" class="btn btn-primary">Booking Sekarang ✦</button>
+          </div>
+        </form>
+
+        <div id="success-toast" class="success-toast hidden">
+          <span>✦</span> Booking berhasil dikonfirmasi! Terima kasih.
+        </div>
+      </div>
+    </section>
+
+    <section id="katalog" class="catalog-section">
+      <div class="section-header">
+        <p class="section-eyebrow">Katalog Dinamis</p>
+        <h2 class="section-title">Manajemen Treatment</h2>
+        <p class="section-sub">Tambah Treatment Baru.</p>
+      </div>
+
+      <div class="catalog-add-form">
+        <h3>Tambah Treatment Baru</h3>
+        <div class="add-form-row">
+          <div class="form-group">
+            <label for="add-nama">Nama Treatment</label>
+            <input type="text" id="add-nama" placeholder="cth. Premium Facial & Spa" />
+            <span class="error-msg" id="error-add-nama"></span>
+          </div>
+          <div class="form-group">
+            <label for="add-kategori">Kategori</label>
+            <select id="add-kategori">
+              <option value="Facial">Facial</option>
+              <option value="Laser">Laser</option>
+              <option value="Spa">Spa</option>
+              <option value="Acne Care"> Acne Care</option>
+              <option value="Whitening">Whitening</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="add-harga">Harga (Rp)</label>
+            <input type="number" id="add-harga" placeholder="cth. 250000" min="1" />
+            <span class="error-msg" id="error-add-harga"></span>
+          </div>
+          <div class="form-group">
+            <label for="add-stok">Stok</label>
+            <input type="number" id="add-stok" placeholder="cth. 50" min="1" />
+            <span class="error-msg" id="error-add-stok"></span>
+          </div>
+        </div>
+        <button class="btn btn-primary" id="btn-add-product">+ Tambah Produk</button>
+      </div>
+
+      <div id="catalog-list" class="catalog-list">
+
+      </div>
+      <p id="catalog-empty" class="catalog-empty hidden">Belum ada produk. Tambahkan produk pertama Anda!</p>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="logo-mark">✦</span>
+        <span class="logo-text">CN<em>beauty</em></span>
+        <p>Klinik kecantikan modern untuk kulit sehat dan glowing.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Navigasi</h4>
+        <ul>
+          <li><a href="#beranda">Beranda</a></li>
+          <li><a href="#produk">Produk</a></li>
+          <li><a href="#beli">Pembelian</a></li>
+          <li><a href="#katalog">Katalog</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Kontak</h4>
+        <p>info@cnbeauty.id</p>
+        <p>+62 85362148380</p>
+        <p>Medan, Sumatera Utara</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 CNbeuty. Dibuat untuk UTS Praktikum Pemrograman Web Dasar — UMSU.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
